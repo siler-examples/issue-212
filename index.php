@@ -5,9 +5,7 @@ namespace App;
 $base_dir = __DIR__;
 require_once "$base_dir/vendor/autoload.php";
 
-use function Siler\Swoole\cors;
-use function Siler\Swoole\http;
-use function Siler\Swoole\json;
+use function Siler\Swoole\{cors, http, json};
 
 $handler = function () {
     cors();
