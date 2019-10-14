@@ -4,43 +4,45 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c26135053a4c19c55b87a7d4ce39670f",
+  "content-hash": "dc5d974da190b1cf3e3b984c989bc9d6",
     "packages": [
         {
             "name": "leocavalcante/siler",
-            "version": "dev-master",
+          "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leocavalcante/siler.git",
-                "reference": "f52d319573c885d8da834fd3c21a775f8db7a80b"
+              "reference": "520963585721b7b0dc3f048a874400a0794da4b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leocavalcante/siler/zipball/f52d319573c885d8da834fd3c21a775f8db7a80b",
-                "reference": "f52d319573c885d8da834fd3c21a775f8db7a80b",
+              "url": "https://api.github.com/repos/leocavalcante/siler/zipball/520963585721b7b0dc3f048a874400a0794da4b8",
+              "reference": "520963585721b7b0dc3f048a874400a0794da4b8",
                 "shasum": ""
             },
             "require": {
+              "ext-json": "^1.2",
                 "php": ">=7.2"
             },
             "require-dev": {
                 "cboden/ratchet": "^0.4",
                 "cocur/slugify": "^3.2",
-                "gabordemooij/redbean": "^5.3",
+              "ext-mongodb": "^1.5",
+              "gabordemooij/redbean": "^5.2",
                 "mongodb/mongodb": "^1.4",
-                "monolog/monolog": "^2.0",
-                "phan/phan": "^2.2",
-                "phpunit/phpunit": "^8.3",
+              "monolog/monolog": "^1.24",
+              "phan/phan": "^1.2",
+              "phpunit/phpunit": "^8.1",
                 "ratchet/pawl": "^0.3",
                 "squizlabs/php_codesniffer": "^3.4",
                 "swiftmailer/swiftmailer": "^6.2",
-                "swoole/ide-helper": "^4.4",
-                "twig/twig": "^2.11",
-                "vlucas/phpdotenv": "^3.4",
+              "swoole/ide-helper": "^4.3",
+              "twig/twig": "^2.7",
+              "vlucas/phpdotenv": "^3.3",
                 "webonyx/graphql-php": "^0.13",
                 "zendframework/zend-diactoros": "^2.1",
                 "zendframework/zend-httphandlerrunner": "^1.1",
-                "zendframework/zend-stratigility": "^3.2"
+              "zendframework/zend-stratigility": "^3.1"
             },
             "suggest": {
                 "vlucas/phpdotenv": "Storing configuration in the environment is one of the tenets of a twelve-factor app."
@@ -57,7 +59,6 @@
                     "src/Db/Redis.php",
                     "src/Diactoros/Diactoros.php",
                     "src/Dotenv/Dotenv.php",
-                    "src/Encoder/Json.php",
                     "src/Functional/Functional.php",
                     "src/Functional/Monad/Monad.php",
                     "src/GraphQL/GraphQL.php",
@@ -69,13 +70,12 @@
                     "src/Monolog/Monolog.php",
                     "src/Prelude/Str.php",
                     "src/Prelude/Tuple.php",
-                    "src/Ratchet/Ratchet.php",
                     "src/Result/Result.php",
                     "src/Route/Route.php",
-                    "src/Siler.php",
                     "src/Stratigility/Stratigility.php",
                     "src/Swoole/Swoole.php",
-                    "src/Twig/Twig.php"
+                  "src/Twig/Twig.php",
+                  "src/Siler.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -93,12 +93,11 @@
                 "api",
                 "framework",
                 "functional",
-                "graphql",
                 "micro",
                 "router",
                 "swoole"
             ],
-            "time": "2019-10-10T19:02:50+00:00"
+          "time": "2019-08-09T15:28:51+00:00"
         }
     ],
     "packages-dev": [
@@ -137,9 +136,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "leocavalcante/siler": 20
-    },
+  "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -1,15 +1,15 @@
-<?php declare(strict_types=1);
+<?php
+declare(strict_types=1);
+require_once 'vendor/autoload.php';
 
-namespace App;
+use Model\Redis;
+use Siler\Route;
+use Siler\Swoole;
 
-$base_dir = __DIR__;
-require_once "$base_dir/vendor/autoload.php";
-
-use function Siler\Swoole\{cors, http, json};
-
-$handler = function () {
-    cors();
-    json('It works');
+$server = function () {
+    new Redis();
+    Route\get('/users', 'users.php');
+    Swoole\emit('Not found', 404);
 };
 
-http($handler)->start();
+Swoole\http($server)->start();
