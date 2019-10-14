@@ -1,0 +1,6 @@
+issue_212:
+  image: leocavalcante/dwoole:dev
+  volumes:
+    - ./:/app
+  ports:
+    - 9501:9501
